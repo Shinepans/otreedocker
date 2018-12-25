@@ -17,7 +17,7 @@ config of otree docker
 
 ```
 .dockerignore
-DockerFile
+Dockerfile
 entrypoint
 pg_ping.py
 ```
