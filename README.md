@@ -7,7 +7,7 @@ config of otree docker
 
 - 仓库： https://cloud.docker.com/repository/docker/shinepans/otreedocker
 
-## docker bub account
+## docker hub account
 
 - 创建docker hub 账户
 - 账户设置中关联 github 账户
