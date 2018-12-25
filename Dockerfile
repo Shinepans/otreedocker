@@ -6,6 +6,8 @@ ENV REDIS_URL="redis://redis:6379" \
 ADD ./ /opt/otree
 ADD ./entrypoint.sh /entrypoint.sh
 ADD ./pg_ping.py /pg_ping.py
+ADD ./requirements.txt /opt/otree/requirements.txt
+ADD ./requirements_base.txt /opt/otree/requirements_base.txt
 
 RUN apk -U add --no-cache bash \
                           curl \
