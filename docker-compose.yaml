@@ -21,7 +21,8 @@ services:
       - "/tmp"
       - "/run"
     networks:
-      db-net:
+      - db-net
+      - redis-net
 
   otree:
     # if using Docker Hub, leave "build: ./" commented out.
