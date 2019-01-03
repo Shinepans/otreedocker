@@ -28,7 +28,7 @@ services:
     # if using Docker Hub, leave "build: ./" commented out.
     # if you want to build an image locally, uncomment it.
 
-    # build: ./
+    build: ./
     image: shinepans/otreedocker:latest
     environment:
       DATABASE_URL: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database/${POSTGRES_DATABASE}"
@@ -40,11 +40,8 @@ services:
     volumes:
       - "otree-resetdb:/opt/init"
     # Uncomment for live editing
-    #   - ./:/opt/otree
-    # command:
-    #   - "otree"
-    #   - "runserver"
-    #   - "0.0.0.0:80"
+      - ./:/opt/otree
+    command: "otree runserver 0.0.0.0:80"
     restart: always
     logging:
       options:

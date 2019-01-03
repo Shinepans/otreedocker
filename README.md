@@ -96,12 +96,21 @@ docker-compose down -v
 - 如果更新了 docker-compose.yaml 或 .env， 需要重建 container:
 
 ```
-docker-compose up --force-recreate
+docker-compose up --force-rec
 ```
 
+### .....................................................
 
 ## js server  for oTree code uploads
+
 
 ```
 npm install & ts-node ./server/app.ts
 ```
+
+## 本地创建镜像
+
+```
+docker build -t NAME .
+```
+
