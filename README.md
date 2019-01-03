@@ -98,3 +98,10 @@ docker-compose down -v
 ```
 docker-compose up --force-recreate
 ```
+
+
+## js server  for oTree code uploads
+
+```
+npm install & ts-node ./server/app.ts
+```

@@ -1,0 +1,27 @@
+{
+  "name": "otreedocker",
+  "version": "1.0.0",
+  "description": "config of otree docker",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^10.12.18",
+    "express": "^4.16.4",
+    "multer": "^1.4.1",
+    "path": "^0.12.7",
+    "unzip": "^0.1.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shinepans/otreeDocker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shinepans/otreeDocker/issues"
+  },
+  "homepage": "https://github.com/Shinepans/otreeDocker#readme"
+}
