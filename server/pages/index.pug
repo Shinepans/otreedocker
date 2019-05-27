@@ -1,0 +1,84 @@
+html
+    head
+        style.
+            body {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 2rem;
+                flex-direction: column;
+            }
+
+            input {
+                background: #2196F3;
+                border: none;
+                padding: .6rem;
+                color: #fff;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+    body
+        h2 OTree Manage Center
+        table
+            tbody
+                tr
+                    th 类型
+                    th 注释
+                    th 操作
+                tr
+                    td 上传OTree实验
+                    td zip打包文件, zip文件名与oTree实验名同
+                    td
+                        div
+                            input#file(type='file', name='file', onchange='fileUpload()', style='display:none')
+                            input(type='button', onclick='select_file()', value='上传我的文件')
+                tr
+                    td 添加Port
+                    td 添加一个OTree服务器端口
+                    td
+                        div
+                            input(type='button', onclick='toAddPort();' value='添加服务端口')
+        script(src='https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js')
+        script.
+            function select_file() {
+                $("#file").trigger("click")
+            }
+            function toAddPort() {
+                window.open('/otree/port/add')
+            }
+            function fileUpload() {
+                var formData = new FormData()
+                formData.append('file', $('#file')[0].files[0])
+                $.ajax({
+                    url: '/upload',
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    dataType: 'json',
+                    clearForm: true,
+                    success: function (data) {
+                        alert('上传成功', data)
+                    },
+                    error: function (data, status, e) {
+                        console.error(e)
+                    }
+                })
+            }

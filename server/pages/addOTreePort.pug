@@ -1,0 +1,68 @@
+html
+    head
+        style.
+            body {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 2rem;
+                flex-direction: column;
+            }
+
+            input {
+                background: #2196F3;
+                border: none;
+                padding: .6rem;
+                color: #fff;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+    body
+        h2 Add Port
+        table
+            tbody
+                tr
+                    th 端口名
+                    th 操作
+                tr
+                    td
+                        input#portVal(style="background: #fff;border: solid 1px #03a9f4;color: #03A9F4;")
+                    td
+                        div
+                            input(type='button' onclick="submitPort()" value="提交")
+        script(src='https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js')
+        script.
+            function submitPort() {
+                $.ajax({
+                    url: '/otree/port/add',
+                    type: 'POST',
+                    data: {
+                        port: $('#portVal').val()
+                    },
+                    dataType: 'json',
+                    clearForm: true,
+                    success: function (data) {
+                        alert('上传成功', data)
+                    },
+                    error: function (data, status, e) {
+                        console.error(e)
+                    }
+                })
+            }

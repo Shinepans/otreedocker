@@ -1,5 +1,5 @@
 import * as passport from 'passport'
-import * as Path from "path";
+import UserOTreeRec from '../models/UserOTreeRec'
 
 export * from './customProxyFilter'
 export * from './middleware'
@@ -22,12 +22,30 @@ export class Ctrl {
         })(req, res)
     }
 
+    static async loginPage(req, res) {
+        res.render('login')
+    }
+
     static async logout(req, res) {
         await req.logout()
         res.redirect('/')
     }
 
-    static async index(req, res) {
-        res.sendFile(Path.resolve(__dirname, '../pages/index.html'))
+    static async indexPage(req, res) {
+        res.render('index')
+    }
+
+    static async addPortPage(req, res) {
+        res.render('addOTreePort')
+    }
+
+    static async addOTreePort(req, res) {
+        const port = req.body.port
+        const userOTreeRec = new UserOTreeRec({
+            port: parseInt(port),
+            user: req.user._id
+        })
+        await userOTreeRec.save()
+        return {err: 0}
     }
 }
