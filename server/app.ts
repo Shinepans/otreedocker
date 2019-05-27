@@ -7,11 +7,25 @@ import * as multer from 'multer'
 import * as Express from 'express'
 import * as ShellJs from 'shelljs'
 import * as dockerCompose from 'docker-compose'
+import * as Proxy from 'http-proxy-middleware'
+
+import {Request} from 'express'
+
+import {checkNeedForProxy, useSessionSet, connectDB} from './appUtils'
+
+
+interface IRequest extends Request {
+    file: any
+    _startTime: any
+}
 
 const app = Express()
 
+connectDB()
+useSessionSet(app)
+
 // cal run time
-app.use((req, res, next) => {
+app.use((req: IRequest, res, next) => {
     req._startTime = new Date()
     let calResponseTime = () => {
         let now: any = new Date()
@@ -32,7 +46,7 @@ app.use((req, res, next) => {
     next()
 })
 
-app.use((req, res) => {
+app.use((req: IRequest, res) => {
     if (req.url.includes('/index')) {
         res.sendFile(Path.resolve(__dirname, './pages/index.html'))
     }
@@ -60,5 +74,13 @@ app.use((req, res) => {
         })
     }
 })
+
+
+app.use((req, res) => {
+    // Custom Proxy
+    const needProxy = checkNeedForProxy(req)
+
+})
+
 
 app.listen(3000, () => console.log(`Start At 3000`))
