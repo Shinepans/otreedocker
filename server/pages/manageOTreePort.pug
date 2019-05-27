@@ -39,34 +39,24 @@ html
         table
             tbody
                 tr
-                    th 端口名
-                    th 地址
+                    th 服务器
+                    th 描述
                     th 操作
+            if ports.length
+                for item in ports
+                    tr
+                        td #{item.host}:#{item.port}
+                        td 服务器HASH: #{item.uniKey}
+                        td
+                            div
+                                input(type='button' onclick="start()" value="访问")
+            else
                 tr
-                    td
-                        input#portVal(style="background: #fff;border: solid 1px #03a9f4;color: #03A9F4;" value="")
-                    td
-                        input#hostVal(style="background: #fff;border: solid 1px #03a9f4;color: #03A9F4;" value="localhost")
-                    td
-                        div
-                            input(type='button' onclick="submitPort()" value="提交")
+                    td 暂无服务器
+                    td -
+                    td -
         script(src='https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js')
         script.
-            function submitPort() {
-                $.ajax({
-                    url: '/otree/port/add',
-                    type: 'POST',
-                    data: {
-                        port: $('#portVal').val(),
-                        host: $('#hostVal').val()
-                    },
-                    dataType: 'json',
-                    clearForm: true,
-                    success: function (data) {
-                        alert('添加成功', data)
-                    },
-                    error: function (data, status, e) {
-                        console.error(e)
-                    }
-                })
+            function start() {
+
             }

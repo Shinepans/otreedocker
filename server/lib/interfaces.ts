@@ -18,6 +18,8 @@ export interface UserDoc extends IDocument {
 }
 
 export interface UserOTreeRec extends IDocument {
-    user: string & UserDoc
-    port: number
+    user: string & UserDoc;
+    host: string;
+    port: number;
+    uniKey: string;
 }

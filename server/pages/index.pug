@@ -43,6 +43,12 @@ html
                     th 注释
                     th 操作
                 tr
+                    td 拥有服务器数量
+                    td 可以运行的OTree服务器
+                    td
+                        div
+                            input(type='button', onclick='toManagePorts();' value=`管理${myPortCount}个服务器`)
+                tr
                     td 上传OTree实验
                     td zip打包文件, zip文件名与oTree实验名同
                     td
@@ -62,6 +68,9 @@ html
             }
             function toAddPort() {
                 window.open('/otree/port/add')
+            }
+            function toManagePorts() {
+                window.open('/otree/port/manage')
             }
             function fileUpload() {
                 var formData = new FormData()

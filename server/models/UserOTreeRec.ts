@@ -7,7 +7,9 @@ const UserOTreeRecSchema = new Schema({
     createAt: {type: Date, default: Date.now},
     updateAt: {type: Date, default: Date.now},
     user: {type: ObjectId, ref: 'User'},
-    port: Number
+    host: String,
+    port: Number,
+    uniKey: {type: String, unique: true}
 })
 
 UserOTreeRecSchema.pre<UserOTreeRec>('save', function (next) {
