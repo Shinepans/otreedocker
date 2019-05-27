@@ -1,7 +1,7 @@
 import {router} from '../routes'
 
 const useRouter = (app) => {
-    app.use(router)
+    app.use('/', router)
 }
 
 export {

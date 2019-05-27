@@ -1,7 +1,8 @@
 'use strict'
 
-const passport = require('passport')
-const User = require('../models/User')
+import * as passport from 'passport'
+import User from '../models/User'
+
 const LocalStrategy = require('passport-local').Strategy
 
 passport.serializeUser(function (user, done) {
@@ -26,11 +27,10 @@ passport.use(new LocalStrategy({usernameField: 'mobile'}, function (phoneno, pas
         user.comparePassword(password, function (err, isMatch) {
             if (isMatch) {
                 delete user.password
+                return done(null, user)
             } else {
                 return done('not match', false, {message: '验证失败'})
             }
         })
     })
 }))
-
-

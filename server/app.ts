@@ -12,7 +12,7 @@ import * as Proxy from 'http-proxy-middleware'
 import {Request} from 'express'
 
 import {checkNeedForProxy} from './controller'
-import {useSessionSet, connectDB, usePassport, useView, useLog, /*checkDocker,*/ useRouter} from './appUtils'
+import {useSessionSet, connectDB, usePassport, useView, useLog, /*checkDocker,*/ useRouter, useBodyParser} from './appUtils'
 
 
 interface IRequest extends Request {
@@ -28,6 +28,7 @@ usePassport(app)
 useView(app)
 useLog(app)
 // checkDocker(app)
+useBodyParser(app)
 useRouter(app)
 
 app.use((req: IRequest, res) => {
@@ -59,10 +60,10 @@ app.use((req: IRequest, res) => {
 })
 
 
-app.use((req, res) => {
+app.use((req, res, next) => {
     // Custom Proxy
     const needProxy = checkNeedForProxy(req)
-
+    next()
 })
 
 

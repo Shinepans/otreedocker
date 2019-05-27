@@ -32,11 +32,18 @@ html
 
             #descr {
                 width: 100%;
-                color: white;
+                color: #03a9f4;
                 letter-spacing: 10px;
                 text-align: center;
                 font-size: 38px;
                 margin-top: 30px;
+            }
+
+            #login {
+                margin: 10rem auto;
+                height: 20rem;
+                border: solid 1px #9E9E9E;
+                width: 50%;
             }
 
             @media (max-width: 767px) {
@@ -48,15 +55,22 @@ html
                     margin-bottom: -70px;
                     font-size: 25px;
                 }
+
+                #login {
+                    width: 80%;
+                }
             }
 
             @media (max-width: 350px) {
                 #descr {
                     font-size: 20px;
                 }
+
+                #login {
+                    width: 95%;
+                }
             }
     body
-        input(type='hidden', id='csrf', value='#{_csrf}')
         #wrapper.centerwrap
             #descr OTree Manager
             if(user)
@@ -65,8 +79,7 @@ html
                 a.centerbutton.weui-btn.weui-btn_primary(style="background:#03a9f4;color:#fff")#loginbtn
                     | Login
         #login.weui-cells.weui-cells_form.hide
-            form(method='POST', action=root + '/user/login')
-                input(type='hidden', name='_csrf', value=_csrf)
+            form(method='POST', action='/login')
                 .weui-cell
                     .weui-cell__hd
                         .weui-label Phone

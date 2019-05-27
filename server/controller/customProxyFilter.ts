@@ -1,7 +1,7 @@
 import {Request} from 'express'
 
 const checkNeedForProxy = (req: Request) => {
-    console.log(req.header)
+    console.log(req)
     return true
 }
 

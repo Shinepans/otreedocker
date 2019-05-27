@@ -1,5 +1,6 @@
 'use strict'
 
+import * as passport from 'passport'
 require('./customPassport')
 
 const usePassport = (app) => {
