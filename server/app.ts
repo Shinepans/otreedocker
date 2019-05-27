@@ -5,13 +5,14 @@ import * as Path from 'path'
 import * as unzip from 'unzip'
 import * as multer from 'multer'
 import * as Express from 'express'
-import * as ShellJs from 'shelljs'
+
 import * as dockerCompose from 'docker-compose'
 import * as Proxy from 'http-proxy-middleware'
 
 import {Request} from 'express'
 
-import {checkNeedForProxy, useSessionSet, connectDB} from './appUtils'
+import {checkNeedForProxy} from './controller'
+import {useSessionSet, connectDB, usePassport, useView, useLog, /*checkDocker,*/ useRouter} from './appUtils'
 
 
 interface IRequest extends Request {
@@ -23,28 +24,11 @@ const app = Express()
 
 connectDB()
 useSessionSet(app)
-
-// cal run time
-app.use((req: IRequest, res, next) => {
-    req._startTime = new Date()
-    let calResponseTime = () => {
-        let now: any = new Date()
-        let deltaTime = now - req._startTime
-        console.log(`${req.method.toLowerCase()} ${req.url} -- ${deltaTime}ms ${new Date()} `)
-    }
-    res.once('finish', calResponseTime)
-    next()
-})
-
-// checking if docker is exsit
-app.use((req, res, next) => {
-    if (!ShellJs.which('docker')) {
-        ShellJs.echo('Docker is required')
-        ShellJs.exit(1)
-        return res.send('No Docker Found')
-    }
-    next()
-})
+usePassport(app)
+useView(app)
+useLog(app)
+// checkDocker(app)
+useRouter(app)
 
 app.use((req: IRequest, res) => {
     if (req.url.includes('/index')) {
@@ -67,7 +51,6 @@ app.use((req: IRequest, res) => {
                 }, (err) => {
                     console.log('something went wrong: ' + err.message)
                 })
-
             } catch (err) {
                 res.send(err)
             }

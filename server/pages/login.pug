@@ -1,0 +1,87 @@
+doctype
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description', content='Anlint Academus')
+        meta(name='viewport', content='width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no')
+        title Otree Proxy
+        link(rel='stylesheet' href='https://res.wx.qq.com/open/libs/weui/1.1.1/weui.min.css')
+        style.
+            body {
+                background: #fff;
+            }
+
+            .centerbutton {
+                margin-top: 150px;
+                width: 180px;
+                padding-left: 30px;
+                letter-spacing: 10px;
+            }
+
+            .centerwrap {
+                position: fixed;
+                top: 15%;
+                width: 100%;
+                display: block;
+            }
+
+            .hide {
+                display: none;
+            }
+
+            #descr {
+                width: 100%;
+                color: white;
+                letter-spacing: 10px;
+                text-align: center;
+                font-size: 38px;
+                margin-top: 30px;
+            }
+
+            @media (max-width: 767px) {
+                #wrapper {
+                    bottom: 36% !important;
+                }
+
+                #descr {
+                    margin-bottom: -70px;
+                    font-size: 25px;
+                }
+            }
+
+            @media (max-width: 350px) {
+                #descr {
+                    font-size: 20px;
+                }
+            }
+    body
+        input(type='hidden', id='csrf', value='#{_csrf}')
+        #wrapper.centerwrap
+            #descr OTree Manager
+            if(user)
+                a.centerbutton.weui-btn.weui-btn_primary(href="/index" style="background:#03a9f4;color:#fff") Home
+            else
+                a.centerbutton.weui-btn.weui-btn_primary(style="background:#03a9f4;color:#fff")#loginbtn
+                    | Login
+        #login.weui-cells.weui-cells_form.hide
+            form(method='POST', action=root + '/user/login')
+                input(type='hidden', name='_csrf', value=_csrf)
+                .weui-cell
+                    .weui-cell__hd
+                        .weui-label Phone
+                    .weui-cell__bd
+                        input.weui-input(type='text', name='mobile')
+                .weui-cell
+                    .weui-cell__hd
+                        .weui-label Password
+                    .weui-cell__bd
+                        input.weui-input(type='text', name='password')
+                .weui-cell
+                    button.weui-btn.weui-btn_primary(type='submit' style="background:#03a9f4;color:#fff") Login
+        script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script.
+            $('#loginbtn').click(function () {
+                $('#login').fadeIn()
+
+            })
