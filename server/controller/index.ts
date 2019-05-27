@@ -1,7 +1,10 @@
 import * as passport from 'passport'
 import UserOTreeRec from '../models/UserOTreeRec'
+import * as httpProxy from 'http-proxy'
 import {checkNeedForProxy} from "./customProxyFilter"
-import User from "../models/User";
+
+
+const proxy = httpProxy.createProxyServer({toProxy: true})
 
 export * from './customProxyFilter'
 export * from './middleware'
@@ -68,6 +71,21 @@ export class Ctrl {
         const port = server.port
         const host = server.host
         req.session.otreeId = server.uniKey
-        res.redirect(`${host}:${port}`)
+        req.session.otreeHost = host
+        req.session.otreePort = port
+        res.redirect(`http://${host}:3000/demo`)
+    }
+
+    static async saveOTreeItem(req, res) {
+        
+    }
+
+    static async proxyOther(req, res) {
+        if (!req.session.otreeId) {
+            return res.send('Not Allowed')
+        }
+        const otreeHost = req.session.otreeHost
+        const otreePort = req.session.otreePort
+        proxy.web(req, res, {target: `http://${otreeHost}:${otreePort}`})
     }
 }

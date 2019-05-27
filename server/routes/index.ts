@@ -19,6 +19,8 @@ const router = Router()
     // proxy
     .use('/', Router()
         .get('/server/:id', Ctrl.proxyServer)
+        .all('/WaitUntilSessionCreated/*/', Ctrl.saveOTreeItem)
+        .all('/*', Ctrl.proxyOther)
     )
 
 export {
