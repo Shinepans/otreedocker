@@ -77,13 +77,11 @@ export class Ctrl {
     }
 
     static async saveOTreeItem(req, res) {
-        
+
     }
 
     static async proxyOther(req, res) {
-        if (!req.session.otreeId) {
-            return res.send('Not Allowed')
-        }
+
         const otreeHost = req.session.otreeHost
         const otreePort = req.session.otreePort
         proxy.web(req, res, {target: `http://${otreeHost}:${otreePort}`})

@@ -1,6 +1,6 @@
 import {Router} from 'express'
 import {Ctrl} from '../controller'
-import {isLogin} from '../controller'
+import {isLogin, hasServer} from '../controller'
 
 const router = Router()
     // pages
@@ -18,8 +18,8 @@ const router = Router()
     )
     // proxy
     .use('/', Router()
-        .get('/server/:id', Ctrl.proxyServer)
-        .all('/WaitUntilSessionCreated/*/', Ctrl.saveOTreeItem)
+        .get('/server/:id', hasServer, Ctrl.proxyServer)
+        .all('/WaitUntilSessionCreated/*/', hasServer, Ctrl.saveOTreeItem)
         .all('/*', Ctrl.proxyOther)
     )
 

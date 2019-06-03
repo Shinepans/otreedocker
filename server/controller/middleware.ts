@@ -5,6 +5,14 @@ const isLogin = (req, res, next) => {
     next()
 }
 
+const hasServer = (req, res, next) => {
+    if (!req.session.otreeId) {
+        return res.send('Not Allowed')
+    }
+    next()
+}
+
 export {
-    isLogin
+    isLogin,
+    hasServer
 }
