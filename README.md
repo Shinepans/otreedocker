@@ -115,6 +115,21 @@ docker build -t otree:user1 .
 ```
 
 
-## 创建不同的docker且分类
+## 运行不同docker在不同端口
+
+```
+docker run -d --name user1 --publish 4938:80
+```
+
+```
+docker run -d --name user2 --publish 4939:80
+```
 
 
+## 针对本配置使用多个 compose 来运行多个实例
+
+```
+docker-compose -f FILEPATH up
+```
+
+针对每个不同的服务端口，对每个 FILEPATH 进行设置，然后加载 docker-compose 配置，进行启动服务
