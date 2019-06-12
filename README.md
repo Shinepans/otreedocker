@@ -111,6 +111,10 @@ npm install & ts-node ./server/app.ts
 ## 本地创建镜像
 
 ```
-docker build -t NAME .
+docker build -t otree:user1 .
 ```
+
+
+## 创建不同的docker且分类
+
 
