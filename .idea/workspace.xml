@@ -2,36 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e80080b1-c5bb-401a-a991-ce4f74052f87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user1/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user1/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user1/quiz/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user1/quiz/_builtin/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user1/quiz/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user1/quiz/pages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user1/quiz/quiz.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user1/quiz/templates/quiz/Question.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user1/quiz/templates/quiz/Results.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user1/quiz/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user1/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user2/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user2/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user2/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user2/quiz/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user2/quiz/_builtin/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user2/quiz/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user2/quiz/pages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user2/quiz/quiz.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user2/quiz/templates/quiz/Question.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user2/quiz/templates/quiz/Results.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user2/quiz/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose2.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/user1/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/.env" beforeDir="false" afterPath="$PROJECT_DIR$/user3/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/user1/entrypoint.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/user1/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/requirements_base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/user1/requirements_base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/auth/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/auth/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/contenttypes/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/contenttypes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/otree/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/otree/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/quiz/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/quiz/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/sessions/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/sessions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/_builtin/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/pages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/quiz.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/templates/quiz/Question.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/templates/quiz/Results.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/oTree/quiz_1546503223103/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/oTree/quiz_1546503223103/_builtin/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/oTree/quiz_1546503223103/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/oTree/quiz_1546503223103/pages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/oTree/quiz_1546503223103/quiz.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/oTree/quiz_1546503223103/templates/quiz/Question.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/oTree/quiz_1546503223103/templates/quiz/Results.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/oTree/quiz_1546503223103/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user1.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user2.yaml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/user3/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -54,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/user2/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -76,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user1/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -95,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -113,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/user3/manage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -122,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/user3/docker-compose.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -233,21 +234,6 @@
             <path>
               <item name="otreedocker" type="b2602c69:ProjectViewProjectNode" />
               <item name="otreedocker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="otreedocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="otreedocker" type="462c0819:PsiDirectoryNode" />
-              <item name="user1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="otreedocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="otreedocker" type="462c0819:PsiDirectoryNode" />
-              <item name="user2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="otreedocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="otreedocker" type="462c0819:PsiDirectoryNode" />
-              <item name="user3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -648,14 +634,14 @@
     <entry file="file://$PROJECT_DIR$/user3/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -665,21 +651,21 @@
     <entry file="file://$PROJECT_DIR$/user3/docker-compose.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user3/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user2/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -695,8 +681,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user1/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
