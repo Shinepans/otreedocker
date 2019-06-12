@@ -18,6 +18,7 @@
     "docker-compose": "^0.9.2",
     "express": "^4.16.4",
     "express-session": "^1.16.1",
+    "fstream": "^1.0.12",
     "http-proxy": "^1.17.0",
     "mongoose": "^5.5.11",
     "multer": "^1.4.1",
