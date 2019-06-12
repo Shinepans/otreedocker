@@ -36,14 +36,14 @@ services:
       OTREE_PRODUCTION: ${OTREE_PRODUCTION}
       OTREE_AUTH_LEVEL: ${OTREE_AUTH_LEVEL}
     ports:
-    # this is the dynamic port to set by nodejs (3099)
-      - 3101:3001
+      # this is the dynamic port to set by nodejs (3099)
+      - 3102:3002
     volumes:
       - "otree-resetdb:/opt/init"
       # Uncomment for live editing
       # this is for dynamic uploads for otree
       - ./:/opt/otree
-    command: "otree devserver 0.0.0.0:3001"
+    command: "otree devserver 0.0.0.0:3002"
     restart: always
     logging:
       options:
