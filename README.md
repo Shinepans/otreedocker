@@ -3,9 +3,46 @@
 
 config of otree docker
 
-使用Docker 配置 otree 就像运行一个已经配置 Postgres，Redis，oTree，Python的虚拟机
-
 - 仓库： https://cloud.docker.com/repository/docker/shinepans/otreedocker
+
+
+## 运行过程
+
+- 建立  .env, 配置 compose 项目名，配置相关设置，区分不同otree服务
+- 配置 docker-compose 配置文件，可直接使用模板文件
+- 使用 docker-compose -f 配置文件路径 up 来启动服务
+
+配置文件：
+
+[user1为例](./user1/.env)
+
+```
+# Database configuration
+POSTGRES_DATABASE=django_db
+POSTGRES_USER=user1
+POSTGRES_PASSWORD=123456
+
+# OTree Settings
+OTREE_PORT=3003
+OTREE_ADMIN_PASSWORD=123456
+# OTREE_PRODUCTION=1
+# OTREE_AUTH_LEVEL=STUDY
+
+# Docker Compose Project Name
+COMPOSE_PROJECT_NAME=user3
+
+# User Port
+USER_PORT=3103
+
+```
+
+其中：
+
+- OTREE_PORT 表示docker 容器中 otree 运行端口
+- OTREE_ADMIN_PASSWORD 表示 otree 管理员密码
+- COMPOSE_PROJECT_NAME 表示 不同的容器项目名，用于相互区分
+- USER_PORT 表示最终向用户暴露的端口
+
 
 ## docker hub account
 
@@ -133,3 +170,5 @@ docker-compose -f FILEPATH up
 ```
 
 针对每个不同的服务端口，对每个 FILEPATH 进行设置，然后加载 docker-compose 配置，进行启动服务
+
+
