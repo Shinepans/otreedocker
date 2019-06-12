@@ -28,23 +28,22 @@ services:
     # if using Docker Hub, leave "build: ./" commented out.
     # if you want to build an image locally, uncomment it.
 
-    # build: ./
+    build: ./
     image: shinepans/otreedocker:latest
     environment:
       DATABASE_URL: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database/${POSTGRES_DATABASE}"
       OTREE_ADMIN_PASSWORD: ${OTREE_ADMIN_PASSWORD}
-      OTREE_PRODUCTION: ${OTREE_PRODUCTION}
-      OTREE_AUTH_LEVEL: ${OTREE_AUTH_LEVEL}
+      # OTREE_PRODUCTION: 1
+      # OTREE_AUTH_LEVEL: STUDY
     ports:
-      - ${OTREE_PORT}:80
+    # this is the dynamic port to set by nodejs (3099)
+      - ${USER_PORT}:${OTREE_PORT}
     volumes:
       - "otree-resetdb:/opt/init"
-    # Uncomment for live editing
-    #   - ./:/opt/otree
-    # command:
-    #   - "otree"
-    #   - "runserver"
-    #   - "0.0.0.0:80"
+      # Uncomment for live editing
+      # this is for dynamic uploads for otree
+      - ./:/opt/otree
+    command: "otree runserver 0.0.0.0:${OTREE_PORT}"
     restart: always
     logging:
       options:
