@@ -43,7 +43,7 @@ services:
       # Uncomment for live editing
       # this is for dynamic uploads for otree
       - ./:/opt/otree
-    command: "otree devserver 0.0.0.0:3002"
+    command: "otree runserver 0.0.0.0:3002"
     restart: always
     logging:
       options:
