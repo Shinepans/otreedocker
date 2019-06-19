@@ -2,92 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e80080b1-c5bb-401a-a991-ce4f74052f87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/.idea/rpc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/dist/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/dist/phase/otree.543c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/core/server/models/ThirdPartPhase.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/core/server/models/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/auth/passport.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/elfProtocol/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/elfProtocol/rpc/interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/elfProtocol/rpc/redisCall.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/elfProtocol/schema/ElfGame.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/elfProtocol/schema/ElfPlayer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/elfProtocol/schema/GameTemplate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/elfProtocol/schema/GameUserPermission.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/elfProtocol/schema/User.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/elfProtocol/schema/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/elfProtocol/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/elfProtocol/util.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/utils/conDB.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/utils/errorPage.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/utils/fetchData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/utils/gen32Token.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/utils/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/utils/passportMiddleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/utils/sessionSetMiddleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/utils/sessionTokenCheck.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/utils/staticPathMiddleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/common/utils/withLinker.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/otree/server/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/otree/server/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/otree/server/utils/InitWork.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/otree/server/utils/ListMap.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/otree/server/utils/ProxyWork.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/otree/server/utils/RewriteResBuffers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/otree/server/utils/getUrlByNamespace.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/otree/server/utils/hack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/otree/server/utils/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/otree/server/utils/otreeList.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/lib/phases/otree/server/views/previewScreenXlsx.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/settings.example.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/containers/super/rpc/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user1/.env" beforeDir="false" afterPath="$PROJECT_DIR$/containers/super/exps/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user1/docker-compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user1/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/containers/super/exps/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user1/quiz/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/containers/super/exps/quiz/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user1/quiz/_builtin/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/containers/super/exps/quiz/_builtin/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user1/quiz/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/containers/super/exps/quiz/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user1/quiz/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/containers/super/exps/quiz/pages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user1/quiz/quiz.csv" beforeDir="false" afterPath="$PROJECT_DIR$/containers/super/exps/quiz/quiz.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user1/quiz/templates/quiz/Question.html" beforeDir="false" afterPath="$PROJECT_DIR$/containers/super/exps/quiz/templates/quiz/Question.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user1/quiz/templates/quiz/Results.html" beforeDir="false" afterPath="$PROJECT_DIR$/containers/super/exps/quiz/templates/quiz/Results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user1/quiz/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/containers/super/exps/quiz/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/containers/super/exps/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user2/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user2/docker-compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user2/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user2/quiz/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user2/quiz/_builtin/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user2/quiz/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user2/quiz/pages.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user2/quiz/quiz.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user2/quiz/templates/quiz/Question.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user2/quiz/templates/quiz/Results.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user2/quiz/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user2/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/containers/super/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/quiz/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/quiz/_builtin/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/quiz/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/quiz/pages.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/quiz/quiz.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/quiz/templates/quiz/Question.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/quiz/templates/quiz/Results.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/quiz/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user3/settings.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+            <state relative-caret-position="391">
+              <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -228,11 +143,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="434" />
-    <option name="y" value="101" />
-    <option name="width" value="1364" />
-    <option name="height" value="726" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="471" />
+    <option name="y" value="77" />
+    <option name="width" value="1301" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -321,10 +236,10 @@
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="434" y="101" width="1364" height="726" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2898773" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20149253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -654,8 +569,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        <state relative-caret-position="391">
+          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
         </state>
       </provider>
     </entry>

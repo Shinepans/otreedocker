@@ -21,7 +21,7 @@ RUN apk -U add --no-cache bash \
     && pip install --no-cache-dir -r /opt/otree/requirements.txt \
     && mkdir -p /opt/init \
     && chmod +x /entrypoint.sh \
-    && apk del curl gcc musl-dev postgresql-dev libffi-dev
+    && apk del curl gcc musl-dev postgresql-dev libffi-dev \
     && npm install -g /opt/rpc/package.json
 
 WORKDIR /opt/otree
