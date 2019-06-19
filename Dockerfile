@@ -24,7 +24,7 @@ RUN apk -U add --no-cache bash \
     && mkdir -p /opt/init \
     && chmod +x /entrypoint.sh \
     && apk del curl gcc musl-dev postgresql-dev libffi-dev \
-    && npm install -g /opt/rpc/package.json
+    && npm install -g /opt/rpc
 
 WORKDIR /opt/otree
 VOLUME /opt/init
