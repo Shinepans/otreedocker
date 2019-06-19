@@ -18,6 +18,8 @@ RUN apk -U add --no-cache bash \
                           postgresql-dev \
                           libffi \
                           libffi-dev \
+                          nodejs \
+                          npm \
     && pip install --no-cache-dir -r /opt/otree/requirements.txt \
     && mkdir -p /opt/init \
     && chmod +x /entrypoint.sh \
