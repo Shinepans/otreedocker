@@ -65,6 +65,7 @@ services:
     networks:
       - redis-net
   web:
+    image: shinepans/otreerpcdocker
     build: .
     volumes:
       - ./rpc:/opt/rpc
