@@ -36,7 +36,7 @@ services:
       # OTREE_PRODUCTION: 1
       # OTREE_AUTH_LEVEL: STUDY
     ports:
-    # this is the dynamic port to set by nodejs (3099)
+      # this is the dynamic port to set by nodejs (3099)
       - ${OTREE_PORT}:${OTREE_PORT}
     volumes:
       - "otree-resetdb:/opt/init"

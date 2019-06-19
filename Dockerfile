@@ -25,7 +25,8 @@ RUN apk -U add --no-cache bash \
     && chmod +x /entrypoint.sh \
     && apk del curl gcc musl-dev postgresql-dev libffi-dev \
     && npm install -g /opt/rpc \
-    && npm install -g ts-node
+    && npm install -g ts-node \
+    && npm install typescript
 
 WORKDIR /opt/otree
 VOLUME /opt/init
