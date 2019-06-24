@@ -1,6 +1,9 @@
 # otreeDocker
 
 
+目的： 创建镜像，基于某些服务的镜像启动多个相互独立的服务，服务间互不干扰，且端口不同。
+
+
 config of otree docker
 
 - 仓库： https://cloud.docker.com/repository/docker/shinepans/otreedocker
@@ -172,3 +175,15 @@ docker-compose -f FILEPATH up
 针对每个不同的服务端口，对每个 FILEPATH 进行设置，然后加载 docker-compose 配置，进行启动服务
 
 
+
+## 项目运行方式
+
+动态设置与服务相关的代码、.env 环境值
+
+将与依赖无关的配置项放在单独文件夹，且挂载到容器中，使得容器服务动态更新
+
+通过 docker-compose 进行容器的管理
+
+docker-compose 详见 ： https://docs.docker.com/compose
+
+Thanks for the [Docker](https://docker.com)
