@@ -68,8 +68,8 @@ services:
     image: shinepans/otreerpcdocker
     build: .
     volumes:
-      - ./rpc:/opt/rpc
-    command: npm run start
+      - ./rpc/configs:/opt/rpc/configs
+#    command: npm run start
 
 volumes:
   database:
